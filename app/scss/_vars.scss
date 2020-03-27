@@ -1,0 +1,21 @@
+$color-black: #000000;
+$color-white: #ffffff;
+
+
+
+
+$fonts-default: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+"Segoe UI Symbol";
+$Rub-regular: "Rubik", $fonts-default;/* Подключаем по ситуации шрифт с дизайна */
+$roboto-regular: "Roboto", $fonts-default;/* Подключаем по ситуации шрифт с дизайна */
+
+
+
+$container-width: 124rem;
+$min-width: 32rem;
+
+
+$laptop-width: 1179px;
+$tablet-width: 1023px;
+$mobile-width: 767px;
+$mobile-width-small: 375px;

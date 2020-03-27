@@ -1,0 +1,133 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+body {
+    width: 100%;
+    min-width: $min-width;
+    margin: 0;
+    padding: 0;
+
+    font-family: $Rub-regular;/* Подключаем по ситуации шрифт с дизайна */
+/*     color: $color-main; */ /* Подключаем по ситуации основной цвет с дизайна */
+    background-color: $color-black;
+}
+body {
+    line-height: 1.5;
+}
+address {
+    font-style: normal;
+}
+button {
+    cursor: pointer;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+label {
+    cursor: pointer;
+    user-select: none;
+}
+textarea {
+    resize: vertical;
+}
+ul {
+    @include list-reset;
+}
+
+input[placeholder] {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+:focus::-moz-placeholder {
+    color: transparent;
+}
+
+:focus:-moz-placeholder {
+    color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+.responsive-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+
+    iframe,
+    object,
+    embed {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: $container-width;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    @include breakpoint($tablet-width) {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    @include breakpoint($mobile-width) {
+   
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.site-wrapper {
+    display: flex;
+    flex-direction: column;
+/*     font-family: $pn-regular; */  /* Подключаем по ситуации шрифт с дизайна */
+    font-size: 1.6rem;
+    min-height: 100vh;
+}
+
+.site-content {
+    position: relative;
+    flex: 1 0 auto;
+}
+
+.bg-cover {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
