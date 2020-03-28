@@ -1,18 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>CarStore</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CarStore</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-  
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/libs.min.js"></script>
-  <script src="js/main.js"></script>
+    <div class="site-wrapper">
+        <header class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-control">
+                        <ul class="header-control__list">
+                            <li class="header-control__list-item">
+                                <a class="header-control__list-link icon-user" href="#">My Account</a>
+                            </li>
+                            <li class="header-control__list-item">
+                                <a class="header-control__list-link icon-cart-plus" href="#">Cart</a>
+                            </li>
+                            <li class="header-control__list-item">
+                                <a class="header-control__list-link icon-check-circle" href="#">Checkout</a>
+                            </li>
+                        </ul>
+                        <buttton class="header-control__search-btn icon-search" type="button"></buttton>
+                    </div>
+                    <div class="header-main">
+                        <div class="logo">
+                            <h1 class="logo__title">Car<span class="logo__title-color">Store</span></h1>
+                            <span class="logo__subtitle">Best Car Seller</span>
+                        </div>
+                        <div class="header-main__inner">
+                            <div class="header-main__info">
+                                <span class="header-main__info-number"><a class="header-main__info-number-link" href="tel:1234567890">+123 456 7890</a></span>
+                                <span class="header-main__info-schedule">Mon-Fri: 8:30am-7:30pm; Sat-Sun: 9:30am-4:30pm</span>
+                            </div>
+                            <ul class="header-main__menu">
+                                <li class="header-main__menu-item icon-star">
+                                    <a class="header-main__menu-link " href="#">Wishlist</a>
+                                </li>
+                                <li class="header-main__menu-item icon-car">
+                                    <a class="header-main__menu-link" href="#">Compare</a>
+                                </li>
+                                <li class="header-main__menu-item icon-shopping-cart">
+                                    <a class="header-main__menu-link" href="#">My Cart</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-menu">
+                <div class="container">
+                    <nav class="header-navigation">
+                        <ul class="header-navigation__list">
+                            <li class="header-navigation__item"><a class="header-navigation__link" href="#">Home</a>
+                            </li>
+                            <li class="header-navigation__item"><a class="header-navigation__link" href="#">Services</a>
+                            </li>
+                            <li class="header-navigation__item"><a class="header-navigation__link" href="#">About</a>
+                            </li>
+                            <li class="header-navigation__item"><a class="header-navigation__link" href="#">Reviews</a>
+                            </li>
+                            <li class="header-navigation__item"><a class="header-navigation__link"
+                                    href="#">Locations</a></li>
+                            <li class="header-navigation__item"><a class="header-navigation__link" href="#">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="banner bg-cover">
+
+        </section>
+        <section class="category-products">
+            <div class="category-products__inner">
+                <div class="category-products__item" href="#" style="background-image: url('img/headlights.png');">
+                    <div class="category-products__item-inner">
+                        <h3 class="category-products__item-title"><a class="category-products__item-link"
+                                href="#">Headlights</a></h3>
+                        <span class="category-products__item-text">Headlights Projector, LED, Factory</span>
+                    </div>
+                </div>
+                <div class="category-products__item category-products__item--dark" href="#"
+                    style="background-image: url('img/drives.png');">
+                    <div class="category-products__item-inner">
+                        <h3 class="category-products__item-title"><a class="category-products__item-link"
+                                href="#">Headlights</a></h3>
+                        <span class="category-products__item-text">Headlights Projector, LED, Factory</span>
+                    </div>
+                </div>
+                <div class="category-products__item category-products__item--dark" href="#"
+                    style="background-image: url('img/wheels.png');">
+                    <div class="category-products__item-inner">
+                        <h3 class="category-products__item-title"><a class="category-products__item-link"
+                                href="#">Headlights</a></h3>
+                        <span class="category-products__item-text">Headlights Projector, LED, Factory</span>
+                    </div>
+                </div>
+                <div class="category-products__item" href="#" style="background-image: url('img/armchairs.png');">
+                    <div class="category-products__item-inner">
+                        <h3 class="category-products__item-title"><a class="category-products__item-link"
+                                href="#">Headlights</a></h3>
+                        <span class="category-products__item-text">Headlights Projector, LED, Factory</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="featured">
+            <div class="container">
+                <h2 class="featured__title">Featured Products</h2>
+                <div class="featured__items">
+                    <div class="featured-item">
+                        <div class="featured-item__img-wrapper">
+                            <img class="featured-item__img" src="img/car-radiator.png" alt="car radiator">
+                        </div>
+
+                        <a class="featured-item__link" href="#">Headlights</a>
+                        <span class="featured-item__price">300$</span>
+                    </div>
+                    <div class="featured-item">
+                        <div class="featured-item__img-wrapper">
+                            <img class="featured-item__img" src="img/car-headlights.png" alt="car radiator">
+                        </div>
+
+                        <a class="featured-item__link" href="#">Headlights</a>
+                        <span class="featured-item__price">300$</span>
+                    </div>
+                    <div class="featured-item">
+                        <div class="featured-item__img-wrapper">
+                            <img class="featured-item__img" src="img/car-seat.png" alt="car radiator">
+                        </div>
+
+                        <a class="featured-item__link" href="#">Headlights</a>
+                        <span class="featured-item__price">300$</span>
+                    </div>
+                    <div class="featured-item">
+                        <div class="featured-item__img-wrapper">
+                            <img class="featured-item__img" src="img/car-speakers.png" alt="car radiator">
+                        </div>
+
+                        <a class="featured-item__link" href="#">Headlights</a>
+                        <span class="featured-item__price">300$</span>
+                    </div>
+                    <div class="featured-item">
+                        <div class="featured-item__img-wrapper">
+                            <img class="featured-item__img" src="img/car-wheel.png" alt="car radiator">
+                        </div>
+
+                        <a class="featured-item__link" href="#">Headlights</a>
+                        <span class="featured-item__price">300$</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="offers bg-cover">
+            <div class="container">
+                <div class="offers__inner">
+                    <div class="offers-item">
+                        <h2 class="offers-item__title">25% OFF<span>on order over $999</span></h2>
+                        <p class="offers-item__text">This Offer is valid on all our items</p>
+                        <button class="offers-item__button ">Buy Now</button>
+                    </div>
+                    <div class="offers-item">
+                        <h2 class="offers-item__title">25% OFF<span>on order over $999</span></h2>
+                        <p class="offers-item__text">This Offer is valid on all our items</p>
+                        <button class="offers-item__button ">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <ul class="footer-main__list footer-main__item">
+                    <h4 class="footer-main__item-title">Quick Links</h4>
+                    <li class="footer-main__list-item">
+                        <a href="#" class="footer-main__list-link">About Us</a>
+                    </li>
+                    <li class="footer-main__list-item">
+                        <a href="#" class="footer-main__list-link">Customer Service</a>
+                    </li>
+                    <li class="footer-main__list-item">
+                        <a href="#" class="footer-main__list-link">Privacy Policy</a>
+                    </li>
+                    <li class="footer-main__list-item">
+                        <a href="#" class="footer-main__list-link">Site Map</a>
+                    </li>
+                    <li class="footer-main__list-item">
+                        <a href="#" class="footer-main__list-link">Search Terms</a>
+                    </li>
+                    <li class="footer-main__list-item">
+                        <a href="#" class="footer-main__list-link">Advanced Search</a>
+                    </li>
+                    <li class="footer-main__list-item">
+                        <a href="#" class="footer-main__list-link">Orders and Returns</a>
+                    </li>
+                    <li class="footer-main__list-item">
+                        <a href="#" class="footer-main__list-link">Contact Us</a>
+                    </li>
+                </ul>
+                <ul class="footer-main__list footer-main__item">
+                    <h4 class="footer-main__item-title">Quick Links</h4>
+                    <li class="footer-main__list-item">
+                        <a href="#" class="footer-main__list-link">About Us</a>
+                    </li>
+                    <li class="footer-main__list-item">
+                        <a href="#" class="footer-main__list-link">Customer Service</a>
+                    </li>
+                    <li class="footer-main__list-item">
+                        <a href="#" class="footer-main__list-link">Privacy Policy</a>
+                    </li>
+                    <li class="footer-main__list-item">
+                        <a href="#" class="footer-main__list-link">Site Map</a>
+                    </li>
+                    <li class="footer-main__list-item">
+                        <a href="#" class="footer-main__list-link">Search Terms</a>
+                    </li>
+                    <li class="footer-main__list-item">
+                        <a href="#" class="footer-main__list-link">Advanced Search</a>
+                    </li>
+                    <li class="footer-main__list-item">
+                        <a href="#" class="footer-main__list-link">Orders and Returns</a>
+                    </li>
+                    <li class="footer-main__list-item">
+                        <a href="#" class="footer-main__list-link">Contact Us</a>
+                    </li>
+                </ul>
+                <ul class="footer-main__list footer-main__item">
+                    <h4 class="footer-main__item-title">Quick Links</h4>
+                    <li class="footer-main__list-item">
+                        <a href="#" class="footer-main__list-link">About Us</a>
+                    </li>
+                    <li class="footer-main__list-item">
+                        <a href="#" class="footer-main__list-link">Customer Service</a>
+                    </li>
+                    <li class="footer-main__list-item">
+                        <a href="#" class="footer-main__list-link">Privacy Policy</a>
+                    </li>
+                    <li class="footer-main__list-item">
+                        <a href="#" class="footer-main__list-link">Site Map</a>
+                    </li>
+                    <li class="footer-main__list-item">
+                        <a href="#" class="footer-main__list-link">Search Terms</a>
+                    </li>
+                    <li class="footer-main__list-item">
+                        <a href="#" class="footer-main__list-link">Advanced Search</a>
+                    </li>
+                    <li class="footer-main__list-item">
+                        <a href="#" class="footer-main__list-link">Orders and Returns</a>
+                    </li>
+                    <li class="footer-main__list-item">
+                        <a href="#" class="footer-main__list-link">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="footer-subscribe footer-main__item">
+                    <h4 class="footer-main__item-title">Newsletter</h4>
+                    <p class="footer-subscribe__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    </p>
+                    <form class="footer-subscribe__form" method="post">
+                        <input class="footer-subscribe__form-input" type="text" required>
+                        <button class="footer-subscribe__form-btn" type="submit">submit</button>
+                    </form>
+                    <div class="footer-subscribe__socials">
+                        <a class="footer-subscribe__socials-link icon-facebook" href="#"></a>
+                        <a class="footer-subscribe__socials-link icon-twitter" href="#"></a>
+                        <a class="footer-subscribe__socials-link icon-google-plus" href="#"></a>
+                        <a class="footer-subscribe__socials-link icon-instagram" href="#"></a>
+                        <a class="footer-subscribe__socials-link icon-pinterest-p" href="#"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-info">
+                <div class="footer-info__inner">
+                    <div class="footer-info__item">
+                        <h4 class="footer-info__item-title">INFORMATION</h4>
+                        <p class="footer-info__item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <div class="footer-info__item">
+                        <h4 class="footer-info__item-title">INFORMATION</h4>
+                        <p class="footer-info__item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <div class="footer-info__item">
+                        <h4 class="footer-info__item-title">CONTACT</h4>
+                        <ul class="footer-contacts">
+                            <li class="footer-contacts__item icon-map-marker">
+                                <a class="footer-contacts__link" href="#">123, Main Road, Your City, NY 1234</a>
+                            </li>
+                            <li class="footer-contacts__item icon-phone">
+                                <a class="footer-contacts__link" href="teL:1234567890">+123 456 7890</a>
+                            </li>
+                            <li class="footer-contacts__item icon-clock-o">
+                                <a class="footer-contacts__link" href="#">
+                                    7 Days a week from 10:00 am to 6:00 pm</a>
+                            </li>
+                            <li class="footer-contacts__item icon-envelope">
+                                <a class="footer-contacts__link" href="#">info@psd.in.ua</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span class="footer-copy">
+                    <span class="footer-copy__company-name">CarStore </span>© 2017 . All Rights Reserved.
+                </span>
+                <div class="footer-payment">
+                    <img class="footer-payment__img" src="img/payments.png" alt="payments">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
