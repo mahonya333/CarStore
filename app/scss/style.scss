@@ -305,9 +305,9 @@
   }
   &__items {
     padding-top: 6.5rem;
-    .slick-slide{
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
+    .slick-slide {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
     }
   }
 }
@@ -362,26 +362,38 @@
       height: 17rem;
       width: 0.2rem;
       background-color: $color-white;
+      @include breakpoint($mobile-width) {
+        display: none;
+      }
     }
   }
 }
 .offers-item {
   width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   &__title {
     margin: 0;
     font-size: 8.1rem;
     font-weight: 700;
-    text-align: center;
     @include breakpoint($tablet-width) {
+      font-size: 6.1rem;
+    }
+    @include breakpoint($mobile-width) {
+      font-size: 8.1rem;
+    }
+    @include breakpoint($mobile-width-small) {
       font-size: 6.1rem;
     }
     span {
       display: block;
       font-size: 4rem;
       @include breakpoint($tablet-width) {
+        font-size: 3rem;
+      }
+      @include breakpoint($mobile-width) {
+        font-size: 4rem;
+      }
+      @include breakpoint($mobile-width-small) {
         font-size: 3rem;
       }
     }
