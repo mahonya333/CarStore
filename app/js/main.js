@@ -16,7 +16,7 @@ $(function () {
         dots: false,
         autoplay: true,
         infinite: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 2000,
         responsive: [
             {
               breakpoint: 768,
@@ -26,6 +26,8 @@ $(function () {
             },
           ]
     });
-
-
+    $('.header-menu__btn').on('click', function () {
+        $('.header-navigation').slideToggle();
+        $('.header-menu__btn').toggleClass('active');
+      });
 });
