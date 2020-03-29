@@ -27,8 +27,9 @@ $(function () {
             },
           ]
     });
-    $('.header-menu__btn').on('click', function () {
+    $('.header-menu__btn').on('click touchstart', function () {
         $('.header-navigation').slideToggle();
         $('.header-menu__btn').toggleClass('active');
+        return false
       });
 });
