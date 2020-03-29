@@ -7,7 +7,8 @@ $(function () {
         autoplay: true,
         infinite: true,
         autoplaySpeed: 2000,
-        variableWidth: true
+        variableWidth: true,
+        swipeToSlide: true
     });
     $('.offers-slider').slick({
         slidesToShow: 2,
